@@ -268,8 +268,8 @@ div.tocify {
 <div id="introduction" class="section level1" number="1">
 <h1 number="1"><span class="header-section-number">1</span> Introduction</h1>
 <p>Pedestrian fatalities have been accelerating for the past decade in the US. Fatality and Injury Reporting System (FARS) reports that 6515 pedestrians died in vehicle crashes in 2020, accounting for 18% of traffic fatalities. The number grew by 50% from 2010, when total traffic fatalities have only increased by 18%.</p>
-<p>In addition, 75% of these pedestrian crashes occurred during dark conditions. This is a more critical issue in low-income neighborhoods where most people would at least walk for a portion of their commuting trips. They include seniors and children, who rely on walking and public transit to access food, health, education, and other public services. It is also an equity issue. A 2022 study reveals that Black and Native American pedestrians have much higher chance to involve in fatal crashes at night comparing to other races.</p>
-<p>In Philadelphia, between 2016 to 2020, around 33% of the pedestrian crashes happened over night (18:00 - 7:00). The number jumps to 62% when looking into fatality cases.</p>
+<p>In addition, 75% of these pedestrian crashes occurred during dark conditions. This is a more critical issue in low-income neighborhoods where most people would at least walk for a portion of their commuting trips. They include seniors and children, who rely on walking and public transit to access food, health, education, and other public services. It is also an equity issue. A 2022 study reveals that Black and Native American pedestrians have a much higher chance to involve in fatal crashes at night compared to other races.</p>
+<p>In Philadelphia, between 2016 to 2020, around 33% of the pedestrian crashes happened overnight (18:00 - 7:00). The number jumps to 62% when looking into fatality cases.</p>
 <pre class="r"><code>#Philly Street Light Poles
 Street_Poles_Data &lt;- st_read(&quot;https://opendata.arcgis.com/datasets/9059a7546b6a4d658bef9ce9c84e4b03_0.geojson&quot;) 
 
@@ -4496,12 +4496,12 @@ Akaike Inf. Crit.
 <h1 number="4"><span class="header-section-number">4</span> Discussion</h1>
 <p>We summarized the results into 7 takeaways：</p>
 <ol style="list-style-type: decimal">
-<li><p>Drunk driving and speed limits still appear to be the most significant variables throughout the analysis. They increase the risk of pedestrian crashes and fatal pedestrian crashes in both dark condition and during daylight.</p></li>
-<li><p>Our results also finds the significance of <em>tree count</em> in relation to pedestrian safety in dark conditions. Higher number of trees are associated with lower number of pedestrian crashes both in dark conditions and during daylight. This might implies that trees might contribute to pedestrian safety beyond asethetic and environmental values.</p></li>
-<li><p>Areas with higher percentage of commuters who use bike, walk, and have significantly higher chance to pedestrian crashes overall. This, <strong>however</strong>, is not a significant variable when comes to fatal pedestrian crashes in dark conditions.</p></li>
-<li><p>Areas with higher percentage of Black population are more prone to night pedestrian crash. Nevertheless, these crashes have less chance to turn into fatal crashes.</p></li>
-<li><p>Lumen size is a significant variable when looking at pedestrian crash cases at night. The results show that the higher the lumen size, the more pedestrian crashes and fatal pedestrian crashes occur in dark conditions. One reason could be that night pedestrian crashes occur along main roads were already pretty well lit, this means there are other factors more significant than brightness that contribute to pedestrian crashes at night.</p></li>
-<li><p>Pedestrian gender is not a significant variable based on our results. There might be an assumption that women are more volunerable to crashes, but our models do not show that.</p></li>
+<li><p>Drunk driving and speed limits still appear to be the most significant variables throughout the analysis. They increase the risk of pedestrian crashes and fatal pedestrian crashes in both dark conditions and during daylight.</p></li>
+<li><p>Our results also find the significance of <em>tree count</em> in relation to pedestrian safety in dark conditions. A higher number of trees is associated with a lower number of pedestrian crashes both in dark conditions and during daylight. This might imply that trees might contribute to pedestrian safety beyond aesthetic and environmental values.</p></li>
+<li><p>Areas with a higher percentage of commuters who bike, walk, or take transits, have a significantly higher chance of pedestrian crashes overall. This, <strong>however</strong>, is not a significant variable when comes to fatal pedestrian crashes in dark conditions.</p></li>
+<li><p>Areas with a higher percentage of Black population are more prone to night pedestrian crashes. Nevertheless, these crashes have less chance to turn into fatal crashes.</p></li>
+<li><p>Lumen size is a significant variable when looking at pedestrian crash cases at night. The results show that the higher the lumen size, the more pedestrian crashes and fatal pedestrian crashes occur in dark conditions. One reason could be that night pedestrian crashes occur along main roads that were already pretty well lit, this means there are other factors more significant than brightness that contribute to pedestrian crashes at night.</p></li>
+<li><p>Pedestrian gender is not a significant variable based on our results. There might be an assumption that women are more vulnerable to crashes, but our models do not show that.</p></li>
 <li><p>Areas with more children are more prone to pedestrian crashes at night.</p></li>
 </ol>
 </div>
