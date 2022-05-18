@@ -4,7 +4,6 @@ author: "Yihong Hu & Shujing Yi"
 date: "4/22/2022"
 output:
   html_document:
-    keep_md: yes
     toc: yes
     theme: united
     toc_float: yes
@@ -884,7 +883,7 @@ library(ggcorrplot)
 fishnet_nu <-
   fishnet_final %>%
   st_drop_geometry()%>%
-  select(-uniqueID, -X)
+  select(-uniqueID)
 
 cor(fishnet_nu)%>%
   ggcorrplot(hc.order = TRUE,
@@ -955,7 +954,7 @@ Crash_Ped_Fish_crash$LightCount[is.na(Crash_Ped_Fish_crash$LightCount)] <- 0
 fishnet_nu_2 <-
   Crash_Ped_Fish_crash %>%
   st_drop_geometry()%>%
-  select(-uniqueID, -DarkConditionCount, -X)
+  select(-uniqueID, -DarkConditionCount)
 
 cor(fishnet_nu_2)%>%
   ggcorrplot(hc.order = TRUE, outline.color = "white")
