@@ -1,5 +1,10 @@
 ---
 title: "Modeling pedestrian safety in dark conditions in Philadelphia"
+knit: (function(input_file, encoding) {
+    out_dir <- 'docs';
+    rmarkdown::render(input_file,
+      encoding=encoding,
+      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "Yihong Hu & Shujing Yi"
 date: "4/22/2022"
 output:
@@ -13,11 +18,6 @@ output:
     fig_align: 'center'
   pdf_document:
     toc: yes
-  knit: (function(input_file, encoding) {
-    out_dir <- 'docs';
-    rmarkdown::render(input_file,
-      encoding=encoding,
-      output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 ```{r setup, include=FALSE}
